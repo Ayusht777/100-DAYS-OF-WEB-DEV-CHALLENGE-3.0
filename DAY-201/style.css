@@ -1,0 +1,72 @@
+:root{
+    /* -----------------------------------
+    
+    platte color site 
+    https://www.happyhues.co/palettes/14
+
+    ----------------------------------- */
+
+    /* Elements */
+   --background : #fffffe;
+   --headline : #272343;
+   --paragraph : #2d334a;
+   --button : #ffd803;
+   --button-text : #272343;
+
+   /* Illustration */
+
+   --secondary :#e3f6f5;
+   --tertiary :#bae8e8;
+
+}
+
+
+body{
+    background-color:var(--background);
+    margin: 0 0;
+
+}
+
+.nav-bar{
+    margin: 1.2rem 1rem;
+    
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+}
+#nav-bar-logo{
+    display: flex;
+    align-items: center;
+}
+
+#nav-bar-logo img{
+    width: 5vw;
+    height: 5vh;
+    
+    
+}
+#nav-bar-items{
+    display: flex;
+    align-items: center;
+}
+#nav-bar-items .nav-element{
+ /* background-color: antiquewhite; */
+ display: flex;
+ justify-content: end;
+ align-items: center;
+ 
+}
+
+#nav-bar-items .nav-element .nav-element-list {
+    padding: 0 1.2rem;
+    list-style: none;
+    
+}
+
+#nav-bar-items .nav-element .nav-element-list a{
+    text-decoration: none;
+    color:var(--headline);
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 1.1rem;
+}
+
