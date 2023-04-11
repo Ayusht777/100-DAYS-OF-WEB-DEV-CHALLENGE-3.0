@@ -1,0 +1,439 @@
+:root {
+    /* -----------------------------------
+    
+    platte color site 
+    https://www.happyhues.co/palettes/14
+
+    ----------------------------------- */
+
+    /* Elements */
+    --background: #fffffe;
+    --button: #ffd803;
+    --button-text: #272343;
+    --headline: #272343;
+    --paragraph: #2d334a;
+
+    /* Illustration */
+
+    --secondary: #e3f6f5;
+    --tertiary: #bae8e8;
+    scrollbar-width: none;
+}
+
+
+body {
+    
+    background-color: var(--background);
+    margin: 0 0;
+    font-family: "TT Norms Pro", sans-serif;
+}
+
+.nav-bar {
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 1rem;
+}
+#nav-bar-logo {
+    align-items: center;
+    display: flex;
+}
+
+#nav-bar-logo img {
+    height: 5vh;
+    width: 5vw;
+}
+
+#nav-bar-items {
+    align-items: center;
+    display: flex;
+}
+#nav-bar-items .nav-element {
+    /* background-color: antiquewhite; */
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+
+#nav-bar-items .nav-element .nav-element-list {
+    list-style: none;
+    padding: 0 1.2rem;
+}
+
+#nav-bar-items .nav-element .nav-element-list a {
+    color: var(--headline);
+
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+#nav-bar-items .nav-element .nav-element-list .nav-anchor:hover {
+    color: var(--tertiary);
+}
+.div1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8rem auto;
+}
+
+.div1 h1 {
+    font-size: 2.5rem;
+    color: var(--headline);
+}
+
+.div1 p {
+    color: var(--paragraph);
+}
+.div1 .div-a {
+    margin-top: 2rem;
+}
+.div1 .avatar {
+    border-radius: 100%;
+    border: 4px solid var(--headline);
+    height: 250px;
+    width: 250px;
+}
+
+.div1 .img1 {
+    margin-top: 6rem;
+}
+.div1 .img1 #img1-1 {
+    height: 20rem;
+}
+
+.div1 .div-b {
+    align-items: center;
+    background-color: #bae8e8;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+.div1 .div-b h1 {
+    color: var(--headline);
+}
+
+.div1 .div-b p {
+    color: var(--paragraph);
+    font-size: 1.2rem;
+    padding: 0.2% 22%;
+}
+
+.div2 {
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    position: relative;
+    top: -15rem;
+    width: 100%;
+    z-index: 1;
+}
+.div2-a {
+    align-items: center;
+    background-color: var(--headline);
+    border-radius: 1.5rem;
+    display: flex;
+    height: 800px;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.div2-b1,
+.div2-b2 {
+    /* background-color:var(--headline); */
+
+    align-items: center;
+    border-right: 1px solid var(--secondary);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: start;
+    padding-top: 5%;
+    width: 33%;
+}
+.div2-b3 {
+    align-items: center;
+    border-right: 0px solid var(--secondary);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: start;
+    padding-top: 5%;
+    width: 33%;
+}
+
+.div2-b1 .inner-logo,
+.div2-b2 .inner-logo,
+.div2-b3 .inner-logo {
+    background-color: var(--background);
+    border-radius: 100%;
+    height: 4em;
+    padding: 2% 2%;
+    width: 4em;
+}
+
+.inner-h1 {
+    color: var(--tertiary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 5%;
+}
+
+.inner-p1 {
+    color: var(--secondary);
+    margin: 2% 6%;
+    text-align: center;
+}
+
+.inner-p2 {
+    color: var(--button);
+    margin-bottom: 0;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.inner-p3 {
+    color: var(--secondary);
+}
+
+.inner-p4 {
+    color: var(--button);
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.inner-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.inner-ls {
+    color: var(--secondary);
+    padding: 5% 0;
+}
+
+.div3 {
+    align-items: center;
+    background-color: var(--tertiary);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 990px;
+    justify-content: center;
+    margin-top: -10%;
+    padding: 2% 2%;
+    width: 100%;
+}
+.div3 h1 {
+    color: var(--headline);
+}
+.div3 p {
+    color: var(--paragraph);
+}
+
+.div3 a {
+    text-decoration: none;
+}
+.innerdiv3 {
+    align-items: center;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 12px 12px;
+    width: 100%;
+}
+
+.innerdiv3 .colums {
+    background-color: #2d334a;
+    border-radius: 12px;
+    height: 300px;
+    overflow: hidden;
+    width: 30%;
+}
+.cl1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.cl1 img {
+    height: 300px;
+    width: 100%;
+}
+
+.columsDescription {
+    color: var(--headline);
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.columsDescription h1 {
+    width: 80%;
+}
+
+button {
+    align-items: center;
+    background-color: var(--button);
+    border-radius: 0.5rem;
+    border-style: none;
+    color: var(--button-text);
+    display: flex;
+    justify-content: center;
+    padding: 2% 5%;
+}
+.arrow {
+    height: 12px;
+    padding-left: 5px;
+    width: 12px;
+}
+
+.columsDescription:hover {
+    align-items: center;
+    background-color: var(--secondary);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    width: 100%;
+}
+
+.div4 {
+    align-items: start;
+    background-color: var(--tertiary);
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    width: 100%;
+}
+
+#buttonformore {
+    font-size: 1.2rem;
+    height: 5vh;
+    padding: 2% 0;
+    position: relative;
+    top: 20px;
+    width: 22vw;
+}
+#buttonformore:hover {
+    transform: scale(0.95);
+    transition: 0.25s ease-in-out;
+}
+.dribble {
+    height: 36px;
+    padding-right: 0.5em;
+    width: 36px;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    width: 100%;
+}
+
+.div5 {
+    background-color: var(--button);
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px var(--background);
+    display: flex;
+    height: 25%;
+    justify-content: space-evenly;
+    padding: 1% 0;
+    position: relative;
+    top: 20%;
+    width: 80%;
+}
+.innerdiv5 {
+    align-items: center;
+    display: flex;
+    flex-basis: 30%;
+    justify-content: center;
+}
+.innerdiv5 h1 {
+    color: var(--headline);
+}
+.ptag {
+    color: var(--headline);
+    text-align: center;
+    width: 80%;
+}
+.innerbtn {
+    align-items: center;
+    background-color: var(--background);
+    color: var(--headline);
+    display: flex;
+    font-size: 1.4rem;
+    height: 40%;
+    justify-content: center;
+    width: 60%;
+}
+.innerbtn:hover {
+    transform: scale(0.95);
+    transition: 0.25s ease-in-out;
+}
+.innerbtnimg {
+    height: 48px;
+    padding-right: 5%;
+    width: 48px;
+}
+.div6 {
+    align-items: center;
+    background-color: var(--button-text);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    width: 100%;
+}
+
+.innerdiv6 {
+    /* background-color:white; */
+    align-items: center;
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    width: 40%;
+}
+.innerdiv6 p {
+    color: var(--background);
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.innerdiv6 h4 {
+    color: var(--background);
+    font-weight: 100;
+}
+
+.div6img {
+    filter: invert(1);
+    height: 48px;
+    width: 48px;
+}
