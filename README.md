@@ -44,3 +44,65 @@ ________
 ## :chart_with_upwards_trend: 100DaysOfCode Day-to-Day Progress
 
 ### :date: _DAY 201_
+
+* [x] Dummy Portfolio Website (Work In Progress )
+
+
+https://user-images.githubusercontent.com/106388215/232819794-90b387bd-490f-440b-8e9f-0d888dc71c8d.mp4
+
+
+### :date: _DAY 202_
+
+* [x] Dummy Portfolio Website (Completed)
+
+
+https://user-images.githubusercontent.com/106388215/232820528-472ef6d1-de6e-41d3-8016-bd751d8b3cc8.mp4
+
+### :date: _DAY 203_
+
+* [x]  Introduction To JavaScript
+* [x]  Variable
+* [x]  Diff. Between Var / Const / let
+
+![Screenshot (190)](https://user-images.githubusercontent.com/106388215/232821924-9452d307-862e-444a-b940-3ba5ff42ca03.png)
+
+### :date: _DAY 204_
+
+* [x]  Operator in Js
+* [x]  Data Types in Js
+
+![Screenshot (191)](https://user-images.githubusercontent.com/106388215/232822129-2b76136c-0c75-41cb-ac0d-e68987424ef8.png)
+
+### :date: _DAY 205_
+
+* [x]  Strings & Strings Methods
+* [x]  if else statements
+* [x]  for loop (in ,of)
+* [x]  while loop
+* [x]  do while loop
+
+![Screenshot (192)](https://user-images.githubusercontent.com/106388215/232822373-f14102ab-8e4f-451b-b879-f553a766466f.png)
+
+### :date: _DAY 206_
+
+* [x]  Array
+* [x]  Array methods
+* [x]  Array Iterator
+* [x]  Set and Week set
+* [x]  Map and Week Map
+
+![Screenshot (193)](https://user-images.githubusercontent.com/106388215/232822589-b1fafbe8-6af3-4905-9db7-c42c6e863c6d.png)
+
+### :date: _DAY 207_
+
+* [x]  Functions
+* [x]  Function Expressions
+* [x]  Parameters and Arguments In Function
+* [x]  return 
+* [x]  Scope
+
+![Screenshot (194)](https://user-images.githubusercontent.com/106388215/232823770-b6b481b0-4f3c-46ef-919d-7692edaef1cd.png)
+
+
+
+
