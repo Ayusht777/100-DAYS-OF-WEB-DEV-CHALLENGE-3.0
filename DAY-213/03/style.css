@@ -1,0 +1,65 @@
+body {
+    background: url(./pexels-leeloo-thefirst-5428826.jpg) no-repeat center center / cover;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.accordion{
+    width:65%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px black;
+}
+
+.accordion .accordion-title{
+    margin-bottom: 30px;
+}
+
+.accordion .content-container .questions{
+    padding: 18px 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.accordion .content-container .questions::after{
+    content: '+';
+    position: absolute;
+    right: -2px;
+}
+
+.accordion .content-container .answer{
+   padding-top: 15px;
+   font-size: 1.2rem;
+   line-height: 1.5;
+   width: 100%;
+   height: 0;
+   overflow: hidden;
+   transition: .5s;
+}
+
+.accordion .content-container.active .answer{
+    height: 100px;
+}
+
+.accordion .content-container.active .questions{
+    font-size:1.2rem ;
+    transition: .5s;
+    color: #37372C;
+}
+
+
+
+
+.accordion .content-container.active .questions::after{
+    content: '❌';
+    transition: 0.5s;
+    
+}

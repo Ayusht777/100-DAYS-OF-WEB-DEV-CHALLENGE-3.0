@@ -1,0 +1,63 @@
+body {
+  align-items: center;
+  background: url(./house_island_2-wallpaper-1920x1080.jpg) no-repeat center center / cover;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  height: 100vh;
+  justify-content: center;
+  margin: 0 0;
+  text-align: center;
+}
+
+.container {
+  height: 450px;
+  width: 550px;
+}
+
+.header {
+  background-color: #262626;
+  border-radius: 5px;
+  border: solid 2px #fff;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 20px auto;
+  padding: 1px;
+  width: 80%;
+}
+
+.main-content {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px;
+  box-sizing: border-box;
+  height: 350px;
+  padding: 50px 10px;
+  width: 100%;
+}
+
+.main-content .text-area {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.main-content .person {
+  color: #3c7ca0;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.button-area button {
+  background-color: #b78a6a;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 70px;
+  padding: 5px 25px;
+}
+
+button:active {
+  background-color: #3c7ca0;
+}
