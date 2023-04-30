@@ -1,0 +1,103 @@
+body{
+    margin: 0 0;
+    background: url(./kelly-sikkema-q3blHqtnhog-unsplash.jpg) no-repeat center center / cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-task-container{
+    width: 350px;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+     
+}
+
+input{
+  flex: 10;
+  margin-right:10px ;
+  font-size: 1.2rem;
+ 
+}
+
+#add-task{
+    flex:1;
+    font-size: 1.4rem;
+   
+    background-color: #fff;
+    color: #4E7443;
+    border: #4E7443 solid;
+    border-radius: 2px;
+    transition: .2s;
+
+}
+
+#add-task:hover{
+    background-color: #3e5f34;
+    color: white;
+}
+
+
+
+.task{
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black; 
+    display: flex;
+    
+    margin-top: 10px;
+  
+    justify-content: space-between;
+    
+}
+
+
+.task li{
+    flex:4;
+    list-style:none;
+    font-size: 1.2rem;
+    
+}
+
+.task .button{
+    flex: 1;
+    background-color: #fff;
+    cursor: pointer;
+  
+
+}
+.task .checkTask{
+    color: orange;
+    border: solid 2px orange;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 0 10px;
+    
+}
+.task .checkTask:hover{
+    color:#fff;
+    background-color: orange;
+}
+.task .deleteTask:hover{
+    color:#fff;
+    background-color:red;
+}
+.task .deleteTask{
+    color: red;
+    border: solid 2px red;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 4px 4px;
+    box-sizing: border-box;
+    margin: 0 10px;
+    
+}

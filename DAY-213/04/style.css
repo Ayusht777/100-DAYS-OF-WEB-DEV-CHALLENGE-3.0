@@ -1,0 +1,68 @@
+body{
+    background-color: #B5E6FA;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 10vh;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(127, 127, 127, 0.836);
+    box-sizing: border-box;
+    overflow: hidden;
+   
+   
+}
+.container .img img{
+   
+    width: 450px;
+    height: 350px;
+}
+
+#timer{
+    padding-top: 40px;
+    font-size: 3rem;
+    font-family: 'Roboto';
+    color: #EE4946;
+
+}
+
+button{
+    padding-top: 5px;
+    border: none;
+    background-color: white;
+    
+}
+
+.buttons i{
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+    
+
+    
+}
+
+#play{
+    color: green;
+    padding-right: 10px;
+   
+}
+#fa-pause{
+    background-color: 'blue';
+}
+#reset{
+    color: red;
+}
+

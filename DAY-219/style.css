@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.popup {
+    margin-top: 10px;
+    width: 250px;
+    height: 70px;
+    background-color: #F0EDEE;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    border-radius: 10px;
+    transform: translateY(-150%);
+    transition: 250ms ease-in-out;
+    padding: 1rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.popup p {
+    color: #0A090C;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+}
+
+.popup i {
+    font-size: 1.8rem;
+    color: #F3752B;
+}
+
+.container {
+    position: relative;
+    background-color: #93B5C6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card-div {
+    background-color: #F0EDEE;
+    min-width: 25%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: -4px -4px 50px rgba(185, 185, 185, 0.5), 4px 4px 15px rgba(0, 0, 0, 0.9);
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    width: 100%;
+    height: 85%;
+    background: 
+    url("https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/245c14f8-2aa4-4c02-8413-60b4cb723d1d/nike-invincible-run-3-by-you-custom-shoes.png") 
+    center center /contain;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 5px solid #dddd;
+    margin-bottom: 1rem;
+   
+
+}
+
+.product-details {
+    position: relative;
+}
+
+#addtocart {
+    width: 100%;
+    height: 3rem;
+    background-color: #0A090C;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(132, 132, 132, 0.9);
+
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+
+}
+
+#addtocart div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+#addtocart .fa-solid {
+    font-size: 1.50rem;
+    flex-basis: 10%;
+
+}
+
+#addtocart h1 {
+    flex-basis: 90%;
+    font-family: 'roboto';
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+#addtocart div:hover {
+    color: #ddd;
+    transition: .250s;
+}
+
+#number {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #F3752B;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 28px;
+    text-align: center;
+    color: #fff;
+    font-family: 'roboto';
+    font-size: .95rem;
+    font-weight: 900;
+    transition: .250s ease-in;
+
+
+}

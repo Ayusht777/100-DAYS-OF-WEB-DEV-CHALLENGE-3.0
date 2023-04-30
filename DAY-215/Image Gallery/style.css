@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto';
+}
+
+.container {
+    font-family: 'Roboto';
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 10px 40px;
+}
+
+#gallery {
+    display: grid;
+    grid-gap: 1.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+
+
+.galleryImages {
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    transition: transform 250ms;
+
+
+}
+
+.galleryImages:hover {
+    box-shadow: 3px 3px 15px black;
+    transform: translate(2px, 2px);
+}
+
+
+#popup {
+
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.80);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    padding: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateY(-100%);
+    transition: transform 250ms;
+
+
+
+}
+
+
+
+#selectedImage {
+    border-radius: 10px;
+    max-height: 100%;
+
+}
