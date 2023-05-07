@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Popup Infinite Slider Gallery</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- The `type="module"` attribute in the script tag tells the browser that the JavaScript code within the script is a module script, 
+		which means it can use some of the features such as `import` and `export`. 
+		It allows for static resolution of module dependencies and promises a much easier and 
+		improved way of writing modern and scalable JavaScript applications. -->
+	<script src="script.js" defer type="module"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="image-container">
+			<button class="image-item" data-modal="true" data-gallery="Furniture">
+				<img src="./Images/funiture/small-f.jpg" alt="furniture">
+			</button>
+			<button class="image-item" data-modal="true" data-gallery="gammer">
+				<img src="./Images/Gammer/small-g.jpg" alt="gammer">
+			</button>
+			<button class="image-item" data-modal="true" data-gallery="places">
+				<img src="./Images/Places/small-p.jpg" alt="places">
+			</button>
+		</div>
+	</div>
+
+</body>
+
+</html>
