@@ -136,7 +136,7 @@ input:focus {
 	margin: 3rem auto ;
 	position: absolute;
 	left: 50%;
-	top: 35%;
+	top: 45%;
 	transform: translate(-50%, -50%);
 	opacity: 1;
 	pointer-events: all;
