@@ -1,0 +1,23 @@
+
+
+[
+    {
+        "name" : "Ayush Talesara",
+        "firstName":"Ayush",
+        "Surname":"Talesara",
+        "age" : 21,
+        "hobbies":["Playing Games","Coding","Riding Bicycle"],
+        "Favorite Games and Price":{"GTA":4857,"PLANT VS ZOMBIES":4787},
+        "type": "module"
+    },
+    {
+        "name" : "Divanyshu sahu",
+        "firstName":"Divuanshu",
+        "Surname":"sahu",
+        "age" : 21,
+        "hobbies":["Playing Games","Coding","Riding Bicycle"],
+        "Favorite Games and Price":{"GTA":4857,"PLANT VS ZOMBIES":4787}
+    }
+      
+    
+]
