@@ -1,0 +1,10 @@
+#feed{
+    min-width: 100%;
+    min-height:400px;
+    background-color: cornsilk;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+}
