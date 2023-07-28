@@ -1,0 +1,90 @@
+:root{
+    --border : 1.5rem;
+}
+body{
+    background-color: white;
+    box-sizing: border-box;
+    font-family: 'Duru Sans', sans-serif;
+
+}
+header{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 14rem;
+
+}
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav .brand{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 2.5rem;
+    
+}
+nav .brand img{
+    height: 16px;
+    width: 16px;
+}
+nav .brand p{
+    font-family: 'Duru Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 0;
+    padding-left: 0.5rem;
+}
+nav .items a{
+    text-decoration-line: none;
+    font-size: .9rem;
+    padding-right: 2rem;
+    color: #727272;
+    font-weight: 500;
+
+}
+
+nav .items a:first-child{
+    color: black;
+    font-weight: bold;
+}
+
+main{
+    margin:0 10rem;
+    /* background-color: black; */
+    height: 1000px;
+    box-sizing: border-box;
+    
+}
+
+.bio-div{
+    display: flex;
+    padding: 1rem 3rem;
+   justify-content: center;
+   align-content: space-between;
+    
+}
+
+.bio-div .bio{
+    width: 700px;
+    height: 500px;
+   
+    border-radius: var(--border);
+    margin-right: 2rem;
+    
+  
+    
+    
+}
+.bio-div .bio img{
+    width: inherit;
+    height: inherit;
+    border-radius: var(--border);
+}
+
+
+.bio-div .photo{
+    max-width: 30%;
+    border-radius:var(--border);
+}
