@@ -1,0 +1,9 @@
+$bg : red;
+
+@mixin flexbox($ai:center){
+    display: flex;
+    align-items: $ai;
+    justify-content: center;
+
+}
+

@@ -1,0 +1,19 @@
+.container-xxl{
+    background-color: aqua;
+    width: auto;
+    height: 400px;
+    .row{
+        background-color: azure;
+        height: 100%;
+        .col{
+            margin: 1rem 1rem;
+            box-sizing: border-box;
+        }
+        .col1{
+            background-color: red;
+        }
+        .col2{
+            background-color: blue;
+        }
+    }
+}

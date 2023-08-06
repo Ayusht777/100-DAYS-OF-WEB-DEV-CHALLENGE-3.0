@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Tasman';
+    src: local('Tasman Light'), local('Tasman-Light'),
+        url('Tasman-Light.woff2') format('woff2'),
+        url('Tasman-Light.woff') format('woff'),
+        url('Tasman-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
