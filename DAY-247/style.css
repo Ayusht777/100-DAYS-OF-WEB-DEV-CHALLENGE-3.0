@@ -1,0 +1,105 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #001220;
+  padding: 0 !important;
+}
+body header .navbar-toggler {
+  color: #fbae3c;
+}
+body header .navbar-toggler .navbar-toggler-icon {
+  color: #f8ebd8 !important;
+}
+body header .navbar-nav {
+  padding-right: 1rem;
+}
+body header .nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+body header .nav-item .nav-link {
+  color: #f8ebd8;
+}
+body header .nav-item .nav-link:hover {
+  color: #fbae3c;
+}
+body header .navbar-nav li a {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#banner {
+  background-color: #001220;
+  color: #f8ebd8;
+  padding-top: 3%;
+  box-sizing: border-box;
+}
+#banner .container {
+  box-sizing: border-box;
+}
+#banner #title {
+  margin-top: 100px;
+  font-size: 2.8rem;
+  color: #fbae3c;
+}
+#banner #des {
+  margin-top: 2rem;
+}
+#banner .col-md-6:last-child img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#services {
+  background-color: #fbae3c;
+  box-sizing: border-box;
+}
+#services .container {
+  background-color: #fbae3c;
+}
+#services .container .row {
+  background-color: #fbae3c;
+}
+#services .container .row .col-md-4 {
+  background-color: #fbae3c;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 10% auto;
+}
+#services .container .row .col-md-4 .circle {
+  width: 8rem;
+  height: 8rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #001220;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#services .container .row .col-md-4 .circle i {
+  font-size: 4rem;
+  color: #fbae3c;
+}
+#services .container .row .col-md-4 h1 {
+  font-size: 1.5rem;
+  margin-top: 5%;
+  color: #f8ebd8;
+}
+#services .container .row .col-md-4 p {
+  width: 60%;
+  box-sizing: border-box;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

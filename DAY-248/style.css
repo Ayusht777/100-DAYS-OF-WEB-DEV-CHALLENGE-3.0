@@ -1,0 +1,229 @@
+@charset "UTF-8";
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #001220;
+  padding: 0 !important;
+}
+body header .navbar-toggler {
+  color: #fbae3c;
+}
+body header .navbar-toggler .navbar-toggler-icon {
+  color: #f8ebd8 !important;
+}
+body header .navbar-nav {
+  padding-right: 1rem;
+}
+body header .nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+body header .nav-item .nav-link {
+  color: #f8ebd8;
+}
+body header .nav-item .nav-link:hover {
+  color: #fbae3c;
+}
+body header .navbar-nav li a {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#banner {
+  background-color: #001220;
+  color: #f8ebd8;
+  padding-top: 3%;
+  box-sizing: border-box;
+}
+#banner .container {
+  box-sizing: border-box;
+}
+#banner #title {
+  margin-top: 100px;
+  font-size: 2.8rem;
+  color: #fbae3c;
+}
+#banner #des {
+  margin-top: 2rem;
+}
+#banner .col-md-6:last-child img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#services {
+  background-color: #fbae3c;
+  box-sizing: border-box;
+}
+#services .container {
+  background-color: #fbae3c;
+  box-sizing: border-box;
+}
+#services .container .ServicesHeading {
+  box-sizing: border-box;
+  padding: 7%;
+  color: #f8ebd8;
+  text-align: center;
+}
+#services .container .row {
+  background-color: #fbae3c;
+  padding-bottom: 8%;
+}
+#services .container .row .col-md-4 {
+  background-color: #fbae3c;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+#services .container .row .col-md-4 .circle {
+  width: 8rem;
+  height: 8rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #001220;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#services .container .row .col-md-4 .circle i {
+  font-size: 4rem;
+  color: #fbae3c;
+}
+#services .container .row .col-md-4 h1 {
+  font-size: 1.5rem;
+  margin-top: 5%;
+  color: #f8ebd8;
+}
+#services .container .row .col-md-4 p {
+  width: 60%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#about {
+  background-color: #001220;
+}
+#about .ServicesHeading {
+  color: #fbae3c;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 7%;
+  text-transform: capitalize;
+}
+#about .row {
+  margin-top: 2%;
+}
+#about .col-md-6:first-child {
+  box-sizing: border-box;
+  margin-top: 5%;
+  text-align: left;
+}
+#about .col-md-6:first-child h4 {
+  color: #f8ebd8;
+}
+#about .col-md-6:first-child ul {
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+#about .col-md-6:first-child ul li {
+  color: #fbae3c;
+  line-height: 2.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+#about .col-md-6:first-child ul li::before {
+  content: "⚪";
+  padding-right: 0.5rem;
+  font-size: 0.5rem;
+}
+#about .col-md-6:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about .col-md-6:last-child img {
+  width: 90%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#Testimonials {
+  background-color: #fbae3c;
+}
+#Testimonials .container {
+  background-color: #fbae3c;
+}
+#Testimonials .container h1 {
+  padding-top: 7%;
+  background-color: #fbae3c;
+  color: #f8ebd8;
+  text-align: center;
+  box-sizing: border-box;
+}
+#Testimonials .container .row {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+#Testimonials .container .row .col-md-5 {
+  color: #f8ebd8;
+  border: 0.2rem dashed #001220;
+  margin-top: 7%;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 8%;
+  padding: 1rem 1rem;
+}
+#Testimonials .container .row .col-md-5 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 7rem;
+}
+#Testimonials .container .row .col-md-5 div .img-fluid {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 4px solid #f8ebd8;
+}
+#Testimonials .container .row .col-md-5 div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #001220;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#Testimonials .smile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+#Testimonials .smile img {
+  width: 8rem;
+  color: #f8ebd8;
+  margin-bottom: 5%;
+}/*# sourceMappingURL=style.css.map */
