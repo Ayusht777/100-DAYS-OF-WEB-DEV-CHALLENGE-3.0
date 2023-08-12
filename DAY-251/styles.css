@@ -81,15 +81,15 @@ body section .container-main .left .circle {
   right: 70px;
 }
 body section .container-main .right {
-  background-color: #F5F9FC;
+  background-color: #f5f9fc;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   align-items: start;
+  padding-right: 8rem;
 }
 body section .container-main .right .container {
-  margin-right: 40rem;
   margin-top: 7rem;
   max-width: 360px;
   width: 100%;
@@ -119,28 +119,31 @@ body section .container-main .right .container .row2 {
 body section .container-main .right .container .row2 h1 {
   font-size: 2rem;
   font-weight: bolder;
-  color: #181A2D;
+  color: #181a2d;
   padding: 0;
 }
-body section .container-main .right .container .row3, body section .container-main .right .container .row4 {
+body section .container-main .right .container .row3,
+body section .container-main .right .container .row4 {
   margin: 0.5rem;
   width: 100%;
 }
-body section .container-main .right .container .row3 p, body section .container-main .right .container .row4 p {
+body section .container-main .right .container .row3 p,
+body section .container-main .right .container .row4 p {
   padding: 0;
   margin-bottom: 0.1rem;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #181A2D;
+  color: #181a2d;
 }
-body section .container-main .right .container .row3 input, body section .container-main .right .container .row4 input {
+body section .container-main .right .container .row3 input,
+body section .container-main .right .container .row4 input {
   width: 100%;
   border: none;
   outline: none;
   border-radius: 0.2rem;
   min-height: 2rem;
-  background-color: #EDF0F4;
-  color: #181A2D;
+  background-color: #edf0f4;
+  color: #181a2d;
 }
 body section .container-main .right .container .row5 {
   margin: 0.5rem;
@@ -196,7 +199,7 @@ body section .container-main .right .container .row5 .extra-btn .git-google {
 }
 body section .container-main .right .container .row5 .extra-btn .git-google button {
   background-color: #ffffff;
-  color: #181A2D;
+  color: #181a2d;
   display: grid;
   grid-template-columns: 1fr 2fr;
   place-items: center;
@@ -213,7 +216,7 @@ body section .container-main .right .container .row5 .extra-btn .git-google butt
   font-size: 1.1rem;
 }
 body section .container-main .right .container .row5 .extra-btn .git-google button:hover {
-  background-color: #EDF0F4;
+  background-color: #edf0f4;
 }
 body section .container-main .right .container .row6 .sign-up {
   display: flex;
