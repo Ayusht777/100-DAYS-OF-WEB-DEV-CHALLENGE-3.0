@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c356a;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  top: 0;
+
+  h1 {
+    color: #fff;
+  }
+  .OpenModalBtn {
+    background-color: #03001c;
+    width: 8rem;
+    height: 2.5rem;
+
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .ModalBg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    box-sizing: border-box;
+    top: 0px;
+   
+
+    .ModalBox {
+      width: 480px;
+      height: 650px;
+      background-color: #03001c;
+      box-sizing: border-box;
+      border-radius: 1rem;
+      padding: 1.5rem 1rem;
+      display: flex;
+      align-items: center;
+      box-shadow: rgba(59, 59, 59, 0.473) 0px 8px 24px;
+      flex-direction: column;
+
+      div:first-child {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        height: 4rem;
+
+        .crossBtn {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 100%;
+          outline: none;
+          border: none;
+          background-color: #e0144c;
+        }
+      }
+
+      .header {
+        width: 100%;
+        max-height: 4rem;
+        height: 20%;
+       
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        h1 {
+          margin: 0;
+          font-size: 2.5rem;
+          color: #fff;
+        }
+      }
+
+      .body{
+        color: #fff;
+        width: 100%;
+        max-height: 70%;
+        height: 70%;
+        box-sizing: border-box;
+        padding: 2rem;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       font-weight: 300;
+      }
+      .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2rem;
+        button{
+            width:10rem;
+            height: 2rem;
+            outline: none;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+            color: #fff;
+
+            &:first-child{
+                background-color: #e0144c;
+            }
+            &:last-child{
+                background-color: #47A992;
+            }
+        }
+      }
+    }
+  }
+}
