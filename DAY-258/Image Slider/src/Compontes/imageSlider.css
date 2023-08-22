@@ -1,0 +1,61 @@
+.CarouselDiv {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: inherit;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.CarouselDiv .CarouselImgContainer {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CarouselDiv .CarouselImgContainer img {
+  width: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+}
+.CarouselDiv .CarouselImgContainer .CircleContainer {
+  position: absolute;
+  width: auto;
+  z-index: 4;
+  bottom: 2vh;
+  display: flex;
+  gap: 1rem;
+}
+.CarouselDiv .CarouselImgContainer .CircleContainer .faCircle {
+  color: #fff;
+  font-size: 0.95rem;
+}
+.CarouselDiv .arrow {
+  position: absolute;
+  z-index: 4;
+  color: #fff;
+  font-size: 2rem;
+}
+.CarouselDiv .arrow:first-child {
+  left: 2vw;
+  top: 45%;
+}
+.CarouselDiv .arrow:last-child {
+  right: 2vw;
+  top: 45%;
+}/*# sourceMappingURL=imageSlider.css.map */

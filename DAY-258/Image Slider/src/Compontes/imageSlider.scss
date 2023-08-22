@@ -1,0 +1,78 @@
+.CarouselDiv {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: inherit;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .CarouselImgContainer {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    img {
+      width: inherit;
+      object-fit: cover;
+
+      height: inherit;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+       position:absolute;
+       z-index: 1;
+
+
+    }
+    .CircleContainer{
+        position: absolute;
+        width:auto;
+        z-index: 4;
+        bottom: 2vh;
+        display:flex;
+        gap: 1rem;
+      .faCircle{
+        
+        color: #fff;
+        font-size: 0.95rem;
+       
+  
+      }
+    }
+ 
+
+    
+  }
+
+  .arrow {
+    position: absolute;
+    z-index: 4;
+    color: #fff;
+    font-size: 2rem;
+    
+
+    &:first-child {
+      left: 2vw;
+      top: 45%;
+     
+    }
+    &:last-child {
+      right: 2vw;
+      top: 45%;
+    }
+
+
+  }
+}
