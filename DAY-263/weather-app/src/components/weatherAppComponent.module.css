@@ -1,0 +1,115 @@
+@import url('https://fonts.cdnfonts.com/css/urw-geometric');
+
+
+.AppBox {
+    background-color: #111015;
+    width: 100%;
+    height: 95vh;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    padding-top: 1rem;
+    font-family: 'URW Geometric', sans-serif;
+                                                
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+
+    box-sizing: border-box;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header .location {
+    height: 100%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    word-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+
+.header .SearchBox {
+    height: 100%;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SearchBox .SearchBar {
+    width: 50%;
+    height: 60%;
+    min-width: 15rem;
+
+    border-radius: 2rem;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1E1E;
+    padding: 0 0.1rem;
+}
+
+.SearchBar input {
+
+    height: 100%;
+    flex-basis: 90%;
+    border-radius: 2rem 0 0 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgb(255, 255, 255);
+}
+
+.SearchBar button {
+    height: 100%;
+    flex-basis: 10%;
+    border-radius: 0 2rem 2rem 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.header .userLogo{
+    height: 100%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 1.5rem;  
+     
+
+}
+.userLogo svg{
+    margin-right: 2rem;
+}

@@ -1,0 +1,352 @@
+/* @import url('https://fonts.cdnfonts.com/css/urw-geometric'); */
+
+
+.AppBox {
+    background-color: #111015;
+    width: 100%;
+    height: 95vh;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 1rem;
+    /* font-family: 'URW Geometric', sans-serif; */
+    flex-direction: column;
+
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+
+    box-sizing: border-box;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header .location {
+    height: 100%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    word-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+
+.header .SearchBox {
+    height: 100%;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SearchBox .SearchBar {
+    width: 50%;
+    height: 60%;
+    min-width: 15rem;
+
+    border-radius: 2rem;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1E1E;
+    padding: 0 0.1rem;
+}
+
+.SearchBar input {
+
+    height: 100%;
+    flex-basis: 90%;
+    border-radius: 2rem 0 0 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgb(255, 255, 255);
+}
+
+.SearchBar button {
+    height: 100%;
+    flex-basis: 10%;
+    border-radius: 0 2rem 2rem 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.header .userLogo {
+    height: 100%;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+
+
+}
+
+.userLogo img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+}
+
+.weatherInfoBox {
+    width: 100%;
+    flex-basis: 55%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    grid-gap: 1rem;
+
+
+}
+
+.weatherInfoBox>div {
+    height: 100%;
+    border-radius: 1rem;
+}
+
+
+.weatherInfoBox .WeatherCurrent {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.WeatherCurrent > div {
+    box-sizing: border-box;
+}
+
+.WeatherCurrent .weatherTitle {
+    width: 100%;
+    height: 20%;
+    margin-top: 0.5rem;
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.weatherTitle .TitleIcon {
+    height: 100%;
+    flex-basis: 20%;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.TitleIcon svg {
+    width: 2rem;
+    height: 2rem;
+    color: #F97F29;
+    position: absolute;
+    z-index: 2;
+
+}
+
+.TitleIcon div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.weatherTitle .Title {
+    height: 100%;
+    flex-basis: 80%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: #fff;
+
+}
+
+.Title h1 {
+    margin: 0;
+}
+
+.Title p {
+    margin: 0;
+    padding-left: .2rem;
+}
+
+.WeatherCurrent .weatherBody {
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+
+
+}
+
+.weatherBody img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: contain;
+    outline: none;
+    border: none;
+
+
+
+
+}
+
+
+
+
+.WeatherCurrent .weatherFooter {
+    width: 100%;
+    height: 40%;
+
+    border-radius: 0 0 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.weatherFooter > div{
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #111015;
+    border-radius: .5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+}
+
+.weatherFooter .one h1,p{
+   margin: 0;
+}
+.one p:last-child{
+    text-transform: capitalize;
+}
+.weatherFooter .one h1{
+   margin: 0;
+   font-size: 2.5rem;
+}
+.weatherFooter .two h1{
+   margin: 0;
+   font-size: 2.5rem;
+}
+
+.weatherFooter .three h1{
+   margin: 0;
+   font-size: 2.5rem;
+   
+}
+
+.weatherInfoBox .AirInfo {
+    background-image: linear-gradient(
+        145deg,
+        hsl(216deg 33% 97%) 0%,
+        hsl(216deg 41% 97%) 11%,
+        hsl(216deg 48% 97%) 22%,
+        hsl(216deg 56% 97%) 33%,
+        hsl(216deg 63% 97%) 44%,
+        hsl(216deg 70% 97%) 56%,
+        hsl(216deg 78% 97%) 67%,
+        hsl(216deg 85% 97%) 78%,
+        hsl(216deg 93% 97%) 89%,
+        hsl(216deg 100% 97%) 100%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-sizing: border-box;
+}
+
+.AirInfo .Airheader{
+    width: 100%;
+    height: 20%;
+    /* background-color: #F97F29; */
+    border-radius: 1rem 1rem 0 0;
+
+}
+.AirInfo .Airbody{
+    width: 100%;
+    height: 40%;
+    /* background-color: #22150c; */
+
+}
+
+.AirInfo .Airfooter{
+    width: 100%;
+    height: 40%;
+    /* background-color: #f929c1; */
+    
+    border-radius: 0 0 1rem 1rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weatherInfoBox .Recent {
+
+
+    overflow: hidden;
+
+}
