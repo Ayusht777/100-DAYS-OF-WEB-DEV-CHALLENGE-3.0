@@ -1,9 +1,10 @@
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import * as Math from "mathjs";
-import { BiSearch } from "react-icons/bi";
+import { BiSearch, BiHistory } from "react-icons/bi";
 import { HiLocationMarker } from "react-icons/hi";
 import { TiWeatherCloudy } from "react-icons/ti";
+import { TbWind } from "react-icons/tb";
 import s from "./weatherAppComponent.module.css";
 import user from "./assets/user.png";
 import { images } from "./img";
@@ -13,25 +14,21 @@ const WeatherAppComponent = () => {
   const inputRef = useRef(null);
   const [City, setCity] = useState("");
   const [Data, setData] = useState(null);
-  // const [AirData, setAirData] = useState(null);
+  const [AirData, setAirData] = useState(null);
   const [Temp, setTemp] = useState(null);
   const [MinTemp, setMinTemp] = useState(null);
   const [MaxTemp, setMaxTemp] = useState(null);
-
+  const [searchedCities, setSearchedCities] = useState([]);
+  
   useEffect(() => {
     const ApiCall = async () => {
       if (City !== "") {
         const res = await axios.get(
           url + `q=${City}` + `&appid=f458fe9b85a5aad938afb32733419a3d`
         );
-        console.log(res.data)
+        console.log(res.data);
         setData(res.data);
-
-        // const AirD = await axios.get(
-        //   `http://api.openweathermap.org/data/2.5/air_pollution?lat=${Data?.coord.lat}&lon=${Data?.coord.lon}&appid=f458fe9b85a5aad938afb32733419a3d`
-        // )
-        // setAirData(AirD)
-
+        
         setTemp(Math.floor(Data?.main?.temp ?? 0) - 273);
 
         setMaxTemp(Math.floor(Data?.main?.temp_max ?? 0) - 273);
@@ -42,13 +39,26 @@ const WeatherAppComponent = () => {
     ApiCall();
   }, [City]);
 
+  useEffect(() => {
+    const AirApiCall = async () => {
+      if (Data != null) {
+        const d = await axios.get(
+          `http://api.openweathermap.org/data/2.5/air_pollution?lat=${Data?.coord?.lat}&lon=${Data.coord.lon}&appid=f458fe9b85a5aad938afb32733419a3d`
+        );
+        console.log(d?.data);
+        setAirData(d?.data);
+      }
+    };
+    AirApiCall();
+  }, [Data]);
+
   const HandleClick = () => {
     setCity(inputRef.current.value);
+    setSearchedCities((prevCities) => [...prevCities, City]);
   };
 
   const iconMappings = {
     "01d": images[0].img,
-
     "02d": images[1].img,
     "03d": images[2].img,
     "04d": images[3].img,
@@ -73,7 +83,6 @@ const WeatherAppComponent = () => {
 
   const bgMapping = {
     "01d": images[0].bg,
-
     "02d": images[1].bg,
     "03d": images[2].bg,
     "04d": images[3].bg,
@@ -94,7 +103,16 @@ const WeatherAppComponent = () => {
   };
 
   const bgSrc = bgMapping[weatherIcon];
-  // console.log(Data?.coord);
+
+  const AQI = {
+    1: ["Good", "#079450"],
+    2: ["Fair", "#FFB300"],
+    3: ["Moderate", "#FF7E00"],
+    4: ["Poor", "#FF0000"],
+    5: ["Very Poor", "#7a006c"],
+  };
+  const AirQuality = AirData?.list[0]?.main.aqi;
+  const AqiDivColor = AQI[AirQuality];
 
   return (
     <div className={s.AppBox}>
@@ -154,11 +172,55 @@ const WeatherAppComponent = () => {
           </div>
         </div>
         <div className={s.AirInfo}>
-          <div className={s.Airheader}></div>
+          <div className={s.Airheader}>
+            <div className={s.AirIcon}>
+              <TbWind />
+              <div></div>
+            </div>
+            <div className={s.AirTitle}>
+              <h1>Air Quality</h1>
+              <p>Main pollution: PM {AirData?.list[0].components.pm2_5}</p>
+            </div>
+          </div>
           <div className={s.Airbody}></div>
-          <div className={s.Airfooter}></div>
+          <div className={s.Airfooter}>
+            <div className={s.Aone}>
+              <h1>{AirData?.list[0].components.co}</h1>
+              <p>CO</p>
+            </div>
+            <div
+              className={s.Atwo}
+              style={{ backgroundColor: AirData != null && AqiDivColor[1] }}
+            >
+              <h1>{AirData != null && AqiDivColor[0]}</h1>
+              <p>AQI</p>
+            </div>
+            <div className={s.Athree}>
+              <h1>{AirData?.list[0].components.o3}</h1>
+              <p>O3</p>
+            </div>
+          </div>
         </div>
-        <div className={s.Recent}></div>
+        <div className={s.Recent}>
+          <div className={s.Rheader}>
+            <div className={s.RIcon}>
+              <BiHistory />
+              <div></div>
+            </div>
+            <div className={s.RTitle}>
+              <h1>Recent Search Cities</h1>
+              <p>Other Cities</p>
+            </div>
+          </div>
+          <div className={s.Rbody}>
+            <ul>
+              {searchedCities.filter((city)=> city!== "").slice(-5).map((city, index) => (
+                  
+                  <li key={index}><h1>{city}</h1></li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

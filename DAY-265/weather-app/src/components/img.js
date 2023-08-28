@@ -20,6 +20,9 @@ import Img011n from "./assets/openweathermap/11n.svg";
 import Img013n from "./assets/openweathermap/13n.svg";
 import Img050n from "./assets/openweathermap/50n.svg";
 
+
+import wind  from "./assets/openweathermap/wind.svg"
+
 export const images = [
   {
     img: Img01d,
@@ -199,7 +202,7 @@ export const images = [
       hsl(207deg 100% 21%) 78%,
       hsl(207deg 100% 20%) 89%,
       hsl(208deg 100% 19%) 100%
-    );
+    )
     `,
   },
   {
@@ -216,7 +219,7 @@ export const images = [
       hsl(207deg 100% 21%) 78%,
       hsl(207deg 100% 20%) 89%,
       hsl(208deg 100% 19%) 100%
-    );
+    )
     `,
     
   },
@@ -234,7 +237,7 @@ export const images = [
       hsl(207deg 100% 21%) 78%,
       hsl(207deg 100% 20%) 89%,
       hsl(208deg 100% 19%) 100%
-    );
+    )
     `,
   },
   {
@@ -320,5 +323,8 @@ export const images = [
       hsl(199deg 38% 14%) 100%
     )
     `
+  },
+  {
+    img: wind
   },
 ];
