@@ -106,8 +106,7 @@ export const Ui = () => {
             <div className={s.twitter}>
               <FiTwitter></FiTwitter>
               <p>
-                {Data?.twitter_username
-                  ?? "Not Available"}
+                {Data?.twitter_username ?? "Not Available"}
               </p>
             </div>
             <div className={s.company}>
