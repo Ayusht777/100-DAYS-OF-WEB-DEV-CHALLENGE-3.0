@@ -14,23 +14,23 @@ export const data = [
     {
         "NavItems":[
             {
-              "Link" : "#",
+              "Link" : "#hero",
                "PageName" : "Home"
             },
             {
-              "Link" : "#",
+              "Link" : "#projects",
                "PageName" : "Projects"
             },
             {
-              "Link" : "#",
+              "Link" : "#skills",
                "PageName" : "Skills"
             },
             {
-              "Link" : "#",
+              "Link" : "#About",
                "PageName" : "About"
             },
             {
-              "Link" : "#",
+              "Link" : "#contact",
                "PageName" : "Contact Me"
             },
         ]

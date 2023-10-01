@@ -1,7 +1,7 @@
 import {SiAboutdotme} from "react-icons/si"
 const AboutSection = () => {
     return (
-      <section className="box-border flex items-center justify-center w-full h-auto bg-bg lg:px-16">
+      <section className="box-border flex items-center justify-center w-full h-auto bg-bg lg:px-16 " id="About">
         <div className="flex flex-col items-center justify-center w-full h-auto lg:p-8 md:p-4">
           <div className="box-border flex flex-col items-center justify-center w-full h-auto gap-3 rounded-md cursor-pointer">
             <h4 className="w-full h-auto text-4xl font-bold text-center text-text">
